@@ -1,0 +1,34 @@
+{"intents":
+    [
+        {
+            "tag":"greeting",
+            "input":["hello","hi","hey","hii","heya"],
+            "response":["hi, Welcome to Decentrawood", "hi"]
+        },
+        {
+            "tag":"goodbye",
+            "input":["bye","ok bye","thanks bye","goodbye"],
+            "response":["bye", "Visit again","goodbye"]
+        },
+        {
+            "tag":"howami",
+            "input":["how are you?","whats up","how you doing?"],
+            "response":["im fine, how are you?","im great, thank you","im doing good"]
+        },
+        {
+    
+            "tag": "default",
+            "input": ["23", "kya karu mai", "I have to catch a train today"," ","i don't know","24","i keep my books in my bag",
+                      "hii i don' know you","i lost my phone","where are your clothes"],
+            "response": [
+              "I'm sorry, I didn't understand that. Could you please rephrase or ask another question Related to Game?"
+            ]
+
+        },
+        {
+            "tag":"gamequestion",
+            "input":["how to play this game?","how do you play this game"],
+            "response":["you can play this game testings"]
+        }
+    ]
+}

@@ -90,7 +90,7 @@ def chat(question):
             if i['tag'] == tag:
                 response= np.random.choice(i['response'])
                 print(response)
-                return ["I'm sorry, I didn't understand that. Could you please rephrase or ask another question?"]
+                #return ["I'm sorry, I didn't understand that. Could you please rephrase or ask another question?"]
 
         return response
 
@@ -143,7 +143,7 @@ def text_api():
 
         if 'text' in data:
             text = data['text']
-            result = recognize_speech_and_respond(text)
+            result = chat(text)
             return jsonify(result)
         else:
             return jsonify({'error': 'Text not provided in the request'})

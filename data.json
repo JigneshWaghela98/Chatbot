@@ -1,34 +1,507 @@
-{"intents":
-    [
-        {
-            "tag":"greeting",
-            "input":["hello","hi","hey","hii","heya"],
-            "response":["hi, Welcome to Decentrawood", "hi"]
-        },
-        {
-            "tag":"goodbye",
-            "input":["bye","ok bye","thanks bye","goodbye"],
-            "response":["bye", "Visit again","goodbye"]
-        },
-        {
-            "tag":"howami",
-            "input":["how are you?","whats up","how you doing?"],
-            "response":["im fine, how are you?","im great, thank you","im doing good"]
-        },
-        {
-    
-            "tag": "default",
-            "input": ["23", "kya karu mai", "I have to catch a train today"," ","i don't know","24","i keep my books in my bag",
-                      "hii i don' know you","i lost my phone","where are your clothes"],
-            "response": [
-              "I'm sorry, I didn't understand that. Could you please rephrase or ask another question Related to Game?"
-            ]
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "input": ["hello", "hi", "hey", "hii", "heya"],
+      "response": ["Hi, How may I help you?, Welcome to Decentrawood", "Hi"]
+    },
+    {
+      "tag": "Decentrawood",
+      "input": [
+        "What is Decentrawood?",
+        "What can I do on Decentrawood?",
+        "what is this website about",
+        "brief me about your website"
+      ],
+      "response": [
+        "Decentrawood is an AI-powered metaverse platform.",
+        "On Decentrawood, you can explore virtual worlds, interact with AI-driven elements, and engage in decentralized finance (DeFi) activities."
+      ]
+    },
+    {
+      "tag": "Decentrawood started",
+      "input": [
+        "How can I get started on Decentrawood?",
+        "how to start",
+        "where can i get started",
+        "how do i start",
+        "how can i start",
+        "how can i explore this website"
+      ],
+      "response": [
+        "You can sign up for an account on the Decentrawood website and follow the onboarding instructions to start exploring the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood accesible",
+      "input": [
+        "Is Decentrawood accessible to everyone?",
+        "can i login decentrawood in another country"
+      ],
+      "response": ["Yes, Decentrawood is accessible to users worldwide."]
+    },
+    {
+      "tag": "Decentrawood avatar",
+      "input": [
+        "Can I customize my avatar on Decentrawood?",
+        "can i change my avatar?",
+        "can i change my character"
+      ],
+      "response": [
+        "Yes, you can customize your avatar to reflect your preferences and style."
+      ]
+    },
+    {
+      "tag": "Decentrawood security",
+      "input": [
+        "Are there any security measures in place on Decentrawood?",
+        "is this safe?",
+        "can i trust this website"
+      ],
+      "response": [
+        "Yes, Decentrawood employs security protocols to protect user data and assets within the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood events",
+      "input": [
+        "What kind of activities can I participate in within Decentrawood?",
+        "What can i do on decentrawood",
+        "what is the use of this website"
+      ],
+      "response": [
+        "You can participate in social interactions, entertainment, education, commerce and decentralized finance (DeFi) activities."
+      ]
+    },
+    {
+      "tag": "Decentrawood real estate",
+      "input": [
+        "Does Decentrawood offer virtual real estate?",
+        "can i buy a land on decentrawood",
+        "i want to buy land on decentrawood"
+      ],
+      "response": [
+        "Yes, Decentrawood provides opportunities for users to own virtual real estate within the metaverse."
+      ]
+    },
+    {
+      "tag": "Decentrawood reward",
+      "input": [
+        "Can I earn rewards on Decentrawood?",
+        "can i earn here",
+        "will i get anything is return if i use this website"
+      ],
+      "response": [
+        "Yes, you can earn rewards through various activities such as participating in decentralized finance (DeFi) protocols, social interactions, and completing tasks within the metaverse."
+      ]
+    },
+    {
+      "tag": "Decentrawood fees",
+      "input": [
+        "Are there any fees associated with using Decentrawood?",
+        "is this paid",
+        "do i have to pay money here"
+      ],
+      "response": [
+        "Decentrawood may charge fees for certain transactions or services within the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood different devices",
+      "input": [
+        "Is Decentrawood compatible with mobile devices?",
+        "can i use this on my phone",
+        "can i access decentrawood on my mobile",
+        "can i use on another device"
+      ],
+      "response": [
+        "Yes, Decentrawood is designed to be accessible on both desktop and mobile devices, allowing users to experience the metaverse wherever they go."
+      ]
+    },
+    {
+      "tag": "Decentrawood collabrate",
+      "input": [
+        "Can I collaborate with other users on Decentrawood?",
+        "can i talk to other users on decentrawood",
+        "can i talk to people",
+        "can i talk to people in the metaverse"
+      ],
+      "response": [
+        "Yes, Decentrawood facilitates collaboration through group activities, shared spaces, and communication tools within the metaverse."
+      ]
+    },
+    {
+      "tag": "Decentrawood community",
+      "input": ["Does Decentrawood have a community forum or social platform?"],
+      "response": [
+        "Yes, Decentrawood provides community forums, social platforms, and virtual gatherings where users can connect, share ideas, and participate in discussions."
+      ]
+    },
 
-        },
-        {
-            "tag":"gamequestion",
-            "input":["how to play this game?","how do you play this game"],
-            "response":["you can play this game testings"]
-        }
-    ]
+    {
+      "tag": "Decentrawood ai",
+      "input": [
+        "How does Decentrawood use artificial intelligence?",
+        "How ai is used in decentrawood",
+        "what is the use of ai",
+        "what will ai do?"
+      ],
+      "response": [
+        "Decentrawood uses artificial intelligence to enhance user experiences, personalize interactions, and optimize various features within the metaverse."
+      ]
+    },
+    {
+      "tag": "Decentrawood transparency",
+      "input": [
+        "How does Decentrawood ensure fairness and transparency in its operations?",
+        "is this fair"
+      ],
+      "response": [
+        "Decentrawood employs transparent protocols and governance mechanisms, including blockchain technology and decentralized decision-making processes, to ensure fairness and transparency."
+      ]
+    },
+    {
+      "tag": "Decentrawood trade",
+      "input": [
+        "Can I trade virtual assets or cryptocurrencies on Decentrawood?",
+        "can i do trading",
+        "can i trade my land",
+        "can i trade my nfts"
+      ],
+      "response": [
+        "Yes, Decentrawood supports trading of virtual assets and cryptocurrencies through decentralized exchanges (DEXs) integrated within the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood user limitation",
+      "input": [
+        "Is there a limit to how many users can access Decentrawood at once?"
+      ],
+      "response": [
+        "Decentrawood is designed to accommodate a large number of users simultaneously, but during peak times, there may be limitations or queues to ensure optimal performance and user experience."
+      ]
+    },
+    {
+      "tag": "Decentrawood free",
+      "input": [
+        "Is Decentrawood free to use?",
+        "is this free",
+        "is this frees of cost",
+        "can i use this for free"
+      ],
+      "response": [
+        "Decentrawood may offer both free and premium features. Some activities within the platform may require payment or subscription, while others are accessible for free."
+      ]
+    },
+    {
+      "tag": "Decentrawood NPCs",
+      "input": [
+        "Can I interact with non-player characters (NPCs) on Decentrawood?",
+        "can i talk with bots",
+        "Are there NPCs I can talk to in Decentrawood?",
+        "Can I have conversations with characters in Decentrawood?",
+        "Do non-player characters in Decentrawood respond to me?",
+        "Are there interactive characters besides players in Decentrawood?"
+      ],
+      "response": [
+        "Yes, Decentrawood may feature NPCs that users can interact with to enhance their virtual experience."
+      ]
+    },
+    {
+      "tag": "Decentrawood events",
+      "input": [
+        "Does Decentrawood offer in-world events or activities?",
+        "Are there any events here",
+        "Can I participate in virtual events or activities in Decentrawood?",
+        "Are there any special occasions or celebrations in Decentrawood?",
+        "Do players organize events or activities within Decentrawood?"
+      ],
+      "response": [
+        "Yes, Decentrawood hosts various events and activities within the metaverse, including concerts, exhibitions, conferences, and social gatherings."
+      ]
+    },
+    {
+      "tag": "Decentrawood items",
+      "input": [
+        "Can I create and customize virtual items on Decentrawood?",
+        "Is it possible to design and personalize virtual items within Decentrawood?",
+        "can i customize virtual items"
+      ],
+      "response": [
+        "Yes, Decentrawood may offer tools and features for users to create, customize, and trade virtual items such as clothing, accessories, and decor."
+      ]
+    },
+
+    {
+      "tag": "Decentrawood age restriction",
+      "input": [
+        "Are there age restrictions for accessing Decentrawood?",
+        "is there any age limit",
+        "what is the age limit",
+        "can kids play this"
+      ],
+      "response": [
+        "Decentrawood may have age restrictions depending on local regulations and the content available within the platform. Users under a certain age may require parental consent or supervision."
+      ]
+    },
+    {
+      "tag": "Decentrawood updates",
+      "input": [
+        "How often does Decentrawood release updates or new features?",
+        "when is the next update"
+      ],
+      "response": [
+        "Decentrawood typically releases updates and new features regularly to enhance the user experience and introduce innovative functionalities."
+      ]
+    },
+    {
+      "tag": "Decentrawood referal",
+      "input": [
+        "Does Decentrawood have a referral program?",
+        "decentrawood referral",
+        "can i give referal to other users"
+      ],
+      "response": [
+        "Yes, Decentrawood may offer a referral program where users can earn rewards for inviting new users to join the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood virtual currency",
+      "input": [
+        " Can I earn virtual currency or tokens on Decentrawood?",
+        "can i earn here",
+        "can i earn while using this website",
+        "can i earn virtual currency"
+      ],
+      "response": [
+        "Yes, Decentrawood offers opportunities for users to earn virtual currency or tokens through various activities such as completing tasks, participating in events, playing games in metaverse or engaging with specific features."
+      ]
+    },
+    {
+      "tag": "Decentrawood limit to buy",
+      "input": [
+        "Is there a limit to the amount of virtual property I can own on Decentrawood?",
+        "is there any limit to buy",
+        "Are there any restrictions on the quantity of virtual property I can own on Decentrawood?",
+        "Does Decentrawood have any rules regarding the maximum number of virtual assets an individual can own?"
+      ],
+      "response": [
+        "Decentrawood may impose limits on the amount of virtual property or assets a user can own to ensure fairness and balance within the metaverse economy."
+      ]
+    },
+    {
+      "tag": "Decentrawood import and export",
+      "input": [
+        "Can I import or export virtual assets between Decentrawood and other platforms?"
+      ],
+      "response": [
+        "Decentrawood may support interoperability with other platforms, allowing users to import or export virtual assets depending on compatibility and regulations."
+      ]
+    },
+    {
+      "tag": "Decentrawood mobile",
+      "input": [
+        "Does Decentrawood have a mobile app?",
+        "is there any mobile app",
+        "do you provide mobile app"
+      ],
+      "response": [
+        "Decentrawood may offer a mobile app for convenient access to the platform's features and functionalities on smartphones and tablets."
+      ]
+    },
+    {
+      "tag": "Decentrawood disputes",
+      "input": ["How does Decentrawood handle disputes between users?"],
+      "response": [
+        "Decentrawood may have protocols in place to resolve disputes between users, which could include mediation, arbitration, or decentralized governance mechanisms."
+      ]
+    },
+    {
+      "tag": "Decentrawood transfer ownership",
+      "input": [
+        "Can I transfer ownership of virtual assets or properties on Decentrawood?",
+        "Can I give away or sell virtual stuff on Decentrawood?",
+        "Is it possible to hand over my digital items to someone else in Decentrawood?",
+        "Can I pass on ownership of my virtual things on Decentrawood?",
+        "can i give my land to someone else"
+      ],
+      "response": [
+        "Yes, Decentrawood may allow users to transfer ownership of virtual assets or properties through secure and transparent transactions within the platform."
+      ]
+    },
+    {
+      "tag": "Decentrawood partnership",
+      "input": [
+        "Does Decentrawood have partnerships with other companies or platforms?",
+        "Is Decentrawood working with other companies or platforms?",
+        "Are there any partnerships between Decentrawood and other companies?",
+        "Are there any companies associated with Decentrawood?",
+        "is decentrawood associated with others"
+      ],
+      "response": [
+        "Yes, Decentrawood may have partnerships with companies, brands, or platforms to enhance its offerings, provide additional features, or expand its reach within the metaverse ecosystem."
+      ]
+    },
+    {
+      "tag": "Decentrawood collabrate",
+      "input": [
+        " Can I collaborate with other users to build virtual structures or projects on Decentrawood?"
+      ],
+      "response": [
+        "Yes, Decentrawood may facilitate collaboration among users to collectively build virtual structures, projects, or experiences within the metaverse."
+      ]
+    },
+    {
+      "tag": "Decentrawood artist",
+      "input": [
+        "Are there opportunities for artists or creators to showcase their work on Decentrawood?",
+        "can artist use this website",
+        "can creators use this website"
+      ],
+      "response": [
+        "Yes, Decentrawood provides opportunities for artists, creators, and developers to showcase their work through exhibitions, galleries, or virtual showcases."
+      ]
+    },
+    {
+      "tag": "Decentrawood digital marketing",
+      "input": [
+        "Are there opportunities for businesses or brands to advertise within Decentrawood's metaverse?"
+      ],
+      "response": [
+        "Yes, Decentrawood may offer advertising opportunities for businesses, brands, or sponsors to reach users within the metaverse through virtual billboards, sponsorships, or branded experiences."
+      ]
+    },
+    {
+      "tag": "Decentrawood updates",
+      "input": [
+        "How does Decentrawood handle updates or maintenance within the metaverse?"
+      ],
+      "response": [
+        "Decentrawood schedules regular updates, maintenance, or downtime to implement new features, enhancements, or fixes within the metaverse, ensuring optimal performance and stability."
+      ]
+    },
+    {
+      "tag": "Decentrawood games",
+      "input": [
+        "can i play games here?",
+        "what kind of games are there",
+        "i want to play games",
+        "what games can i play here",
+        "what games are there"
+      ],
+      "response": ["Yes, Decentrawood allows you to play games like roullete"]
+    },
+    {
+      "tag": "Decentrawood games",
+      "input": ["can i earn while playing games", "earn while playing"],
+      "response": ["Yes you can rewards while playing games"]
+    },
+    {
+      "tag": "goodbye",
+      "input": ["bye", "ok bye", "thanks bye", "goodbye"],
+      "response": ["bye", "Visit again", "goodbye"]
+    },
+
+    {
+      "tag": "howami",
+      "input": ["how are you?", "whats up", "how you doing?"],
+      "response": [
+        "im fine, how are you?",
+        "im great, thank you",
+        "im doing good"
+      ]
+    },
+    {
+      "tag": "default",
+      "input": [
+        "23",
+        "kya karu mai",
+        "I have to catch a train today",
+        " ",
+        "i don't know",
+        "24",
+        "i keep my books in my bag",
+        "hii i don' know you",
+        "i lost my phone",
+        "where are your clothes"
+      ],
+      "response": [
+        "I'm sorry, I didn't understand that. Could you please rephrase or ask another question Related to Game?"
+      ]
+    },
+    {
+      "tag": "metaverse",
+      "input": ["What is the metaverse?", "What is metaverse?", "metaverse?"],
+      "response": [
+        "The metaverse refers to a collective virtual shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual spaces. It's a concept where users interact with a computer-generated environment and other users."
+      ]
+    },
+    {
+      "tag": "NFTs",
+      "input": [
+        "How do NFTs work?",
+        "How does Nfts work?",
+        "What is Nft?",
+        "nft?"
+      ],
+      "response": [
+        "NFTs, or Non-Fungible Tokens, are unique digital assets stored on a blockchain. They represent ownership or proof of authenticity of a digital item, such as artwork, music, videos, or virtual real estate, using cryptographic principles."
+      ]
+    },
+    {
+      "tag": "NFTs invest",
+      "input": [
+        "How can I invest in NFTs?",
+        "How do I invest in NFTs?",
+        "Where can i invest in Nft"
+      ],
+      "response": [
+        "You can invest in NFTs by purchasing them on NFT marketplaces using our cryptocurrency DEOD."
+      ]
+    },
+    {
+      "tag": "NFTs creation",
+      "input": [
+        "How can I create my own NFT?",
+        "can I create my own NFT?",
+        "How do I create my own NFT?",
+        "How do I create my own NFT?"
+      ],
+      "response": [
+        "To create your own nft you can click on the marketplace on top right and there you will find an option to create your own Nft"
+      ]
+    },
+    {
+      "tag": "Blockchain technology",
+      "input": [
+        " What are the benefits of blockchain technology?",
+        "What is blockchain technology?"
+      ],
+      "response": [
+        " Blockchain technology offers decentralized and transparent transactions, enhanced security, immutability, reduced costs, increased efficiency, and opportunities for innovation across various industries, including finance, supply chain, healthcare, and more."
+      ]
+    },
+    {
+      "tag": "Cryptocurrency",
+      "input": [
+        "Can you explain how cryptocurrencies work?",
+        "What is cryptocurrency",
+        "what is crypto?",
+        "what is the use of crypto"
+      ],
+      "response": [
+        " Cryptocurrencies are digital or virtual currencies secured by cryptography, which makes them nearly impossible to counterfeit. They operate on decentralized networks based on blockchain technology, allowing secure peer-to-peer transactions without the need for intermediaries like banks."
+      ]
+    },
+    {
+      "tag": "Smart Contract",
+      "input": [
+        "What role do smart contracts play in NFTs?",
+        "what is smart contract"
+      ],
+      "response": [
+        " Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They play a crucial role in NFTs by automating the sale, transfer, and royalties of digital assets, providing transparency and security for creators and buyers."
+      ]
+    }
+  ]
 }

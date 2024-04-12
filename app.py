@@ -51,8 +51,7 @@ def chat():
         for i in data['intents']:
             if i['tag'] == tag:
                 print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL, np.random.choice(i['response']))
-                return ["I'm sorry, I didn't understand that. Could you please rephrase or ask another question?"]
-
+               
 
 #search chatbot who learns from its user'''
 

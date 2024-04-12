@@ -94,44 +94,9 @@ def chat(question):
 
         return response
 
-engine = pyttsx3.init()
-# Set the speaking rate (adjust as desired)
-engine.setProperty('rate', 180)
 
-# Set the volume level (between 0 and 1)
-engine.setProperty('volume', 1.0)
-    
-def recognize_speech_and_respond():
-    # initialized the recognizer
-    recognizer = sr.Recognizer()
-
-    # capturing voice command
-    with sr.Microphone() as source:
-        print("Listening for a question about India and Its Culture...")
-        audio = recognizer.listen(source)
-
-    # Recognize speech using Google Web Speech API
-    try:
-        question = recognizer.recognize_google(audio)
-        print(f"Question: {question}")
-    except sr.UnknownValueError:
-        print("Google Speech Recognition could not understand audio")
-        return
-    except sr.RequestError as e:
-        print(f"Could not request results from Google Speech Recognition service; {e}")
-        return
 
     
-    
-
-
-    # Get the response from the AI model
-    response = chat(question)
-    print(f"Response: {response}")
-
-    engine.say(response)
-    engine.runAndWait()
-    engine.stop()
 
    
 app=Flask(__name__)#difining flask for api calling
